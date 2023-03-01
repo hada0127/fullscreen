@@ -1,0 +1,67 @@
+/*
+font
+*/
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 700;
+	font-display: swap;
+	src: local('Pretendard Bold'), url('./font/Pretendard-Bold.woff2') format('woff2'), url('./font/Pretendard-Bold.woff') format('woff');
+}
+
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 400;
+	font-display: swap;
+	src: local('Pretendard Regular'), url('./font/Pretendard-Regular.woff2') format('woff2'), url('./font/Pretendard-Regular.woff') format('woff');
+}
+
+/*
+reset
+*/
+*{margin:0;padding:0;font:inherit;color:inherit;}
+*, :after, :before {box-sizing:border-box;flex-shrink:0;}
+:root {-webkit-tap-highlight-color:transparent;-webkit-text-size-adjust:100%;text-size-adjust:100%;cursor:default;line-height:1.5;overflow-wrap:break-word;-moz-tab-size:4;tab-size:4}
+html, body {height:100%;}
+img, picture, video, canvas, svg {display: block;max-width:100%;}
+button {background:none;border:0;cursor:pointer;}
+a {text-decoration:none}
+table {border-collapse:collapse;border-spacing:0}
+ul {list-style: none;}
+li {display:inline-block;}
+
+/*
+basic
+*/
+*{
+	font-family: 'Pretendard';font-weight: 400;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+*, :after, :before {font-family: 'Pretendard';font-weight: 400;}
+body {background-color:#FAFAFA;}
+
+.modal {
+	width: 1200px;
+	height: 800px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.7);
+	z-index: 200;
+}
+.modal .area {
+	position:absolute;
+	inset: 0;
+	margin: auto;
+	width:fit-content;
+	height:fit-content;
+	border-radius: 7px;
+	background: #FFF;
+	box-shadow: 2.88775px 2.88775px 7.21939px rgba(180, 172, 172, 0.25);
+}
+body {overflow:hidden;}
